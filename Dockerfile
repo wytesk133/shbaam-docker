@@ -1,6 +1,6 @@
 FROM continuumio/miniconda
 
-apt-get install git
+RUN apt-get install git
 
 RUN useradd -ms /bin/bash wyte
 USER wyte
