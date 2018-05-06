@@ -11,6 +11,6 @@ WORKDIR /home/wyte/shbaam
 ADD environment.yml .
 
 RUN conda env create -f environment.yml
-CMD source activate your-environment && \
+CMD source activate shbaam && \
     python tst/tst_pub_dwnl_David_etal_201x_SER.sh && \
     python tst/tst_pub_repr_David_etal_201x_SER.sh
