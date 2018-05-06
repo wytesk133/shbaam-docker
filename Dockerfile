@@ -6,7 +6,7 @@ RUN useradd -ms /bin/bash wyte
 USER wyte
 WORKDIR /home/wyte
 
-git clone https://github.com/wytesk133/shbaam
+RUN git clone https://github.com/wytesk133/shbaam
 WORKDIR /home/wyte/shbaam
 ADD environment.yml .
 
