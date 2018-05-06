@@ -7,4 +7,4 @@ before_install:
   - docker build -t shbaam .
 
 script:
-  - docker start shbaam
+  - docker run shbaam
